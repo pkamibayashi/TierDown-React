@@ -1,7 +1,6 @@
-# Template para aplicação React com autenticação + Tailwind
+# React para aplicação TierDown tracker. React com autenticação + Tailwind
 
-Tailwind já instalado e pronto para ser utilizado.
-Plugins: @tailwindcss/typography e @tailwindcss/forms
+
 
 Tailwind Docs
 
