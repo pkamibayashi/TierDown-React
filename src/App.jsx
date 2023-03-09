@@ -5,8 +5,9 @@ import { Home } from "./pages/Home";
 import { Login } from "./pages/Login";
 import { Profile } from "./pages/Profile";
 import { Signup } from "./pages/Signup";
-
+import PartPage from "./pages/PartsPage/PartsPage";
 import { ProtectedRoute } from "./components/ProtectedRoute";
+import PartForm from "./pages/PartsPage/PartForm";
 
 function App() {
   return (
@@ -19,6 +20,14 @@ function App() {
           <Route
             path="/profile"
             element={<ProtectedRoute component={Profile} />}
+          />
+          <Route
+            path="/parts"
+            element={<ProtectedRoute component={PartPage} />}
+          />
+          <Route
+            path="/partform"
+            element={<ProtectedRoute component={PartForm} />}
           />
 
           <Route path="*" element={<Error />} />

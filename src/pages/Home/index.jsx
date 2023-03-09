@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 export function Home() {
   return (
-    <div className="h-screen flex flex-row px-20  bg-gradient-to-r from-purple-500 to-pink-500 ">
+    <div className="h-screen flex flex-row px-20  bg-gradient-to-r from-indigo-400 to-pink-300 ">
       <div className="text-6xl flex flex-col items-center justify-center w-2/4 px-8 gap-y-20 space-y-40 p-10">
-        <div className="drop-shadow-lg before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
-          <h1 className=" text-slate-300 font-medium   drop-shadow-lg text-white	relative   md:block hidden">
-            Bem vindo ao TearDown Tracker!{" "}
+        <div className="drop-shadow-lg before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block  md:block hidden">
+          <h1 className="text-slate-300 font-bold drop-shadow-lg text-white md:block hidden font-montserrat">
+            Bem vindo ao TearDown Tracker!
           </h1>
         </div>
         <div className="md:block hidden ">

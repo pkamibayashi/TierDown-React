@@ -63,15 +63,7 @@ export function Signup() {
             onChange={handleChange}
             className="border rounded-md px-2 py-1 mb-4 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
           />
-          <label className="text-gray-800 font-bold mb-2" htmlFor="formImg">
-            Sua foto de perfil:
-          </label>
-          <input
-            type="file"
-            id="formImg"
-            onChange={handleImage}
-            className="border rounded-md px-2 py-1 mb-4 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-          />
+
           <label className="text-gray-800 font-bold mb-2" htmlFor="formEmail">
             E-mail:
           </label>
