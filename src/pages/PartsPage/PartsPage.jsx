@@ -19,6 +19,18 @@ function PartPage() {
     fetchParts();
   }, []);
 
+  // função para deletar uma part pelo id
+  async function deletePart(partId) {
+    try {
+      const response = await api.delete(`/part/delete/${partId}`);
+      console.log(response.data);
+      // remove a part deletada da lista de parts
+      setParts(parts.filter((part) => part._id !== partId));
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   // renderiza a lista de parts em cartões
   const partCards = parts.map((part) => (
     <div className="card" key={part._id}>
@@ -28,6 +40,17 @@ function PartPage() {
         <p className="card-text">{part.machineSerialNumber}</p>
         <p className="card-text">{part.userCreator.name}</p>
         <p className="card-text">{part.createdAt}</p>
+        {localStorage.getItem("loggedInUser") &&
+        JSON.parse(localStorage.getItem("loggedInUser")).user.role ===
+          "ADMIN" ? (
+          <button
+            type="button"
+            className="btn btn-danger"
+            onClick={() => deletePart(part._id)}
+          >
+            Delete
+          </button>
+        ) : null}
       </div>
     </div>
   ));
