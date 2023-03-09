@@ -1,7 +1,7 @@
 import { api } from "../../api/api";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaPlus, FaUser } from "react-icons/fa";
+import { FaPlus, FaUser, FaThLarge } from "react-icons/fa";
 
 function PartPage() {
   const [parts, setParts] = useState([]);
@@ -109,6 +109,13 @@ function PartPage() {
               >
                 <FaUser className="mr-2" />
                 Perfil
+              </Link>
+              <Link
+                to="/parts"
+                className="flex items-center px-4 py-2 rounded-md hover:bg-gray-700"
+              >
+                <FaThLarge className="mr-2" />
+                Parts
               </Link>
             </div>
           </div>
