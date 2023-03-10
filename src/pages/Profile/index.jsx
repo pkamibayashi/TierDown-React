@@ -31,7 +31,7 @@ export function Profile() {
           <div className="flex items-center justify-between py-2 ">
             <div>
               <Link to="/" className="text-lg font-semibold mb-8">
-                Home Page
+                HOME
               </Link>
             </div>
             <div className="flex items-center justify-center ">
@@ -40,14 +40,14 @@ export function Profile() {
                 className="flex items-center px-4 py-2 rounded-md hover:bg-gray-700"
               >
                 <FaPlus className="mr-2" />
-                Add Part
+                ADD PART
               </Link>
               <Link
                 to="/profile"
                 className="flex items-center px-4 py-2 rounded-md hover:bg-gray-700"
               >
                 <FaUser className="mr-2" />
-                Profile
+                Perfil
               </Link>
               <Link
                 to="/parts"
