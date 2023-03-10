@@ -41,7 +41,7 @@ function PartForm() {
           <div className="flex items-center justify-between py-2">
             <div>
               <Link to="/" className="text-lg font-semibold">
-                My App
+               HOME
               </Link>
             </div>
             <div className="flex items-center">
@@ -50,7 +50,7 @@ function PartForm() {
                 className="flex items-center px-4 py-2 rounded-md hover:bg-gray-700"
               >
                 <FaPlus className="mr-2" />
-                Adicionar Part
+                ADD PART
               </Link>
               <Link
                 to="/profile"
