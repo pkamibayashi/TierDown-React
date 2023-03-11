@@ -13,3 +13,9 @@ Tailwind Components
 Hero Icons
 Site - https://heroicons.com/
 Docs - https://github.com/tailwindlabs/heroicons
+
+
+APRESENTAÇÃO
+https://docs.google.com/presentation/d/1LySvpPffmFTFusWx0A3FFbkD56gEUY3IdK-MQmETPZ0/edit?usp=sharing
+DEMO
+https://teardownlenono.netlify.app/
